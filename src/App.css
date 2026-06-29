@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0b1026, #1a1f4d, #111827);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+  
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+}
+
+.navbar h2{
+  color:#ff4d79;
+  font-size:34px;
+  font-weight:700;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar li:hover {
+  color: #ff4d79;
+  transform: translateY(-3px);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px;
+}
+
+.profile-image{
+  width:350px;
+  height:350px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid #ff4d79;
+  box-shadow:0 0 40px rgba(255,77,121,0.5);
+}
+
+.hero-text h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.hero-text h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero-text button{
+  background:#ff4d79;
+  color:white;
+  border:none;
+  padding:18px 38px;
+  border-radius:50px;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.hero-text button:hover{
+  transform:translateY(-5px);
+  background:#ff2f63;
+  box-shadow:0 10px 30px rgba(255,77,121,.5);
+}.hero {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}.about{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:45px;
+    color:#ff4d79;
+    margin-bottom:30px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#ddd;
+}.skills{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.skills h2{
+    font-size:45px;
+    color:#ff4d79;
+    margin-bottom:50px;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:#1b2148;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.skill-card h3{
+    color:white;
+    font-size:24px;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(255,77,121,0.4);
+}.experience{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.experience h2{
+    font-size:45px;
+    color:#ff4d79;
+    margin-bottom:50px;
+}
+
+.experience-card{
+    max-width:800px;
+    margin:auto;
+    background:#1b2148;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 10px 30px rgba(255,77,121,0.2);
+}
+
+.experience-card h3{
+    color:white;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.experience-card h4{
+    color:#ff4d79;
+    margin-bottom:20px;
+}
+
+.experience-card ul{
+    text-align:left;
+    line-height:2;
+    color:#ddd;
+    font-size:20px;
+}.projects{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.projects h2{
+    font-size:45px;
+    color:#ff4d79;
+    margin-bottom:50px;
+}
+
+.project-card{
+    max-width:900px;
+    margin:30px auto;
+    background:#1b2148;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.project-card h3{
+    color:#ff4d79;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.project-card p{
+    color:#ddd;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(255,77,121,0.4);
+}.contact{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:45px;
+    color:#ff4d79;
+    margin-bottom:40px;
+}
+
+.contact p{
+    font-size:22px;
+    color:#ddd;
+    margin:15px 0;
+}
+
+.contact a{
+    color:#ff4d79;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
